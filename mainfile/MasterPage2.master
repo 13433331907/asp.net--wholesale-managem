@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="zhuye">
+        <div id="header" style="background-image: url('/image/loginbg.png'); width: 100%; height: 150px;"></div>
+        <div id="banner" style="text-align: center; line-height: 30px; background-color: aqua;">
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Medium" NavigateUrl="~/userPhone.aspx">手机</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" NavigateUrl="~/userearphone.aspx">耳机</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Medium" NavigateUrl="~/userpeijian.aspx">配件</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Medium" NavigateUrl="~/usercomputer.aspx">电脑</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/useryuding.aspx">订单管理</asp:HyperLink>
+            </div>
+        <div id="body">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+            </div>
+        <div id="footer" style="background-color: aqua; width: 100%; height: 50px"></div>
+    </div>
+    </form>
+</body>
+</html>
